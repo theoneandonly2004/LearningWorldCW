@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/XP Scene.unity
+  isLoaded: 1
+  isActive: 1

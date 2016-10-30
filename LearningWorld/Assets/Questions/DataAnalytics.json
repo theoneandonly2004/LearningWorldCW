@@ -1,0 +1,18 @@
+{
+  "num_questions": 2,
+  "num_answers": 3,
+  "answers": [
+    {
+      "question": "What is data analytics?",
+      "answer": "I don't know",
+      "option1": "I know all",
+      "option2": "something something data something"
+    },
+    {
+      "question": "how can we store data best?",
+      "answer": "memory pen",
+      "option1": "paper",
+      "option2": "our mind"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "num_questions": 2,
+  "num_answers": 3,
+  "answers": [
+    {
+      "question": "which of the following is not a filter type",
+      "answer": "threshold",
+      "option1": "mean",
+      "option2": "modal"
+    },
+    {
+      "question": "how do we get apply a mean filter",
+      "answer": "add all pixels and divide by the number of pixels",
+      "option1": "set all pixel values to 0",
+      "option2": "find the highest pixel value and subtract from the lowest pixel value"
+    }
+  ]
+}

@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 
+[System.Serializable]
 public class ClassStats
 {
     public string className;
@@ -12,12 +15,11 @@ public class ClassStats
 
     private const int BASELEVEL = 10;
     private int baseIncreasePerLevel = 5;
-    private bool hasLeveled = false;
+   // private bool hasLeveled = false;
 
     public ClassStats(string pClassName)
     {
         className = pClassName;
-
     }
 
     public void setupOutputText()
@@ -50,27 +52,68 @@ public class ClassStats
         xp = newXP;
     }
 
+    public int getXP()
+    {
+        return xp;
+    }
+
 
 }
 
 public class GameManager : MonoBehaviour {
 
     Dictionary<string, ClassStats> classes = new Dictionary<string, ClassStats>();
+    GameObject xpCanvas;
+    public bool isCanvasDisabled, canCameraMove = false;
+    string fileName = "PlayerData";
 
     // Use this for initialization
     void Start () {
-        classes.Add("WebDev", new ClassStats("Web Development"));
+       /* classes.Add("WebDev", new ClassStats("Web Development"));
         classes.Add("DataAnalytics", new ClassStats("DataAnalytics"));
         classes.Add("WebDataBases", new ClassStats("WebDataBases"));
         classes.Add("ImageProcessing", new ClassStats("ImageProcessing"));
         classes.Add("GamesDevelopment", new ClassStats("GamesDevelopment"));
-        classes.Add("SoftwareDevelopment", new ClassStats("SoftwareDevelopment"));
+        classes.Add("SoftwareDevelopment", new ClassStats("SoftwareDevelopment"));*/
+
+        xpCanvas = GameObject.Find("XPCanvas");
+        isCanvasDisabled = xpCanvas.gameObject.activeInHierarchy;        
+        isCanvasDisabled = !isCanvasDisabled;
+        canCameraMove = isCanvasDisabled;
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-	
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            if (isCanvasDisabled)
+            {
+                xpCanvas.gameObject.SetActive(true);
+                isCanvasDisabled = false;
+                canCameraMove = false;
+               
+            }
+            else
+            {
+                xpCanvas.gameObject.SetActive(false);
+                isCanvasDisabled = true;
+                canCameraMove = true;
+            }
+        }	
 	}
+
+    public void manageCamera(bool enable)
+    {
+        canCameraMove = enable;
+
+    }
+
+    public bool getCanCameraMove()
+    {
+        return canCameraMove;
+    }
 
     public ClassStats getStats(string lookupName)
     {
@@ -81,8 +124,11 @@ public class GameManager : MonoBehaviour {
     public void updateStats(string lookupName , ClassStats updatedStats)
     {
         ClassStats updatedValue = getLevel(updatedStats);
-        classes[lookupName] = updatedValue;        
+        classes[lookupName] = updatedValue;
+                
     }
+
+    
 
     public ClassStats getLevel(ClassStats stats)
     {

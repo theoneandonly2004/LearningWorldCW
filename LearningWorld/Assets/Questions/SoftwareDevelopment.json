@@ -1,0 +1,18 @@
+{
+  "num_questions": 2,
+  "num_answers": 3,
+  "answers": [
+    {
+      "question": "how do you print to the console in java?",
+      "answer": "System.out.print",
+      "option1": "Console.log",
+      "option2": "Debug.Log"
+    },
+    {
+      "question": "which is the most appropriate loop for searching an entire array",
+      "answer": "For loop",
+      "option1": "While loop",
+      "option2": "Do While loop"
+    }
+  ]
+}

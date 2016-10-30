@@ -1,0 +1,18 @@
+{
+  "num_questions": 2,
+  "num_answers": 3,
+  "answers": [
+    {
+      "question": "Which would you use to chose from a databse",
+      "answer": "select * from",
+      "option1": "choose * from",
+      "option2": "pick * from"
+    },
+    {
+      "question": "How should you store passwords in a database",
+      "answer": "encrypt them ",
+      "option1": "dont",
+      "option2": "put them in as is"
+    }
+  ]
+}

@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningWorld.CSharp.Plugins", "LearningWorld.CSharp.Plugins.csproj", "{ED9CBB9B-F983-4536-D8B9-DE9960DE8E01}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningWorld.CSharp", "LearningWorld.CSharp.csproj", "{592F1234-C20D-B1AB-49E1-3BEE61500718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningWorld.CSharp.Editor", "LearningWorld.CSharp.Editor.csproj", "{22ED79F4-EF22-BB5F-7179-92AEC24FA893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED9CBB9B-F983-4536-D8B9-DE9960DE8E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9CBB9B-F983-4536-D8B9-DE9960DE8E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9CBB9B-F983-4536-D8B9-DE9960DE8E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9CBB9B-F983-4536-D8B9-DE9960DE8E01}.Release|Any CPU.Build.0 = Release|Any CPU
 		{592F1234-C20D-B1AB-49E1-3BEE61500718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{592F1234-C20D-B1AB-49E1-3BEE61500718}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{592F1234-C20D-B1AB-49E1-3BEE61500718}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{592F1234-C20D-B1AB-49E1-3BEE61500718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22ED79F4-EF22-BB5F-7179-92AEC24FA893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22ED79F4-EF22-BB5F-7179-92AEC24FA893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22ED79F4-EF22-BB5F-7179-92AEC24FA893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22ED79F4-EF22-BB5F-7179-92AEC24FA893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

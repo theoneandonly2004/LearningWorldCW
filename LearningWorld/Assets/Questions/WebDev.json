@@ -1,0 +1,18 @@
+{
+  "num_questions": 2,
+  "num_answers": 3,
+  "answers": [
+    {
+      "question": "Which is not a native web language",
+      "answer": "C++",
+      "option1": "PHP",
+      "option2": "Javascript"
+    },
+    {
+      "question": "Which will not take a new line in html",
+      "answer": "<tr>",
+      "option1": "<p>",
+      "option2": "<br>"
+    }
+  ]
+}
